@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body {
+  background-color: #0F0F1A;
+  color: #e2e8f0;
+  font-family: system-ui, -apple-system, sans-serif;
+  height: 100%;
+  margin: 0;
+}
+
+#root { height: 100%; }
+* { box-sizing: border-box; }
+
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: #0F0F1A; }
+::-webkit-scrollbar-thumb { background: #2A2A4A; border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: #7C3AED; }
+
+.fc {
+  --fc-border-color: #2A2A4A;
+  --fc-button-bg-color: #7C3AED;
+  --fc-button-border-color: #7C3AED;
+  --fc-button-hover-bg-color: #6D28D9;
+  --fc-button-hover-border-color: #6D28D9;
+  --fc-button-active-bg-color: #5B21B6;
+  --fc-button-active-border-color: #5B21B6;
+  --fc-today-bg-color: rgba(124, 58, 237, 0.1);
+  --fc-page-bg-color: #0F0F1A;
+  --fc-neutral-bg-color: #1A1A2E;
+  --fc-event-border-color: transparent;
+}
+
+.fc-theme-standard td, .fc-theme-standard th { border-color: #2A2A4A; }
+.fc-col-header-cell-cushion, .fc-daygrid-day-number { color: #94a3b8; text-decoration: none; }
+.fc-toolbar-title { color: #e2e8f0; font-size: 1.1rem !important; font-weight: 600; }
+.fc-event { cursor: pointer; border-radius: 4px; font-size: 0.75rem; }
